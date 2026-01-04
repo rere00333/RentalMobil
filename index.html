@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Beranda | Rental Mobil</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- 🔐 CEK LOGIN -->
+<script>
+  if (localStorage.getItem("login") !== "true") {
+    window.location.href = "login.html";
+  }
+</script>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">RentalMobil</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto align-items-center">
+        <li class="nav-item"><a class="nav-link active" href="#">Beranda</a></li>
+        <li class="nav-item"><a class="nav-link" href="profil.html">Profil</a></li>
+        <li class="nav-item"><a class="nav-link" href="katalogmobil.html">Katalog</a></li>
+        <li class="nav-item"><a class="nav-link" href="transaksi.html">Transaksi</a></li>
+        <li class="nav-item ms-2">
+          <button class="btn btn-warning btn-sm" onclick="logout()">Logout</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="bg-light py-5">
+  <div class="container text-center">
+    <h1 class="fw-bold">Sewa Mobil Mudah & Terpercaya</h1>
+    <p class="text-muted mb-4">
+      Pilihan mobil lengkap dengan harga terjangkau
+      <br>
+      Teman perjalanan Anda untuk setiap momen berharga!
+      <br>
+      Kami menyediakan berbagai pilihan mobil berkualitas, nyaman, dan terawat, siap menemani perjalanan Anda — dari urusan bisnis, liburan keluarga, hingga acara spesial.
+      <br>
+     <p>
+          <strong>RentalMobil</strong> adalah perusahaan jasa penyewaan mobil
+          yang berdiri sejak tahun 2020. Kami berkomitmen memberikan layanan
+          terbaik dengan armada yang aman, nyaman, dan terawat.
+        </p>
+        <p>
+          Kami melayani sewa harian, mingguan, hingga bulanan untuk kebutuhan
+          pribadi, bisnis, maupun perjalanan wisata.
+        </p>
+        
+
+<section class="py-5">
+  <div class="container">
+    <h3 class="text-center mb-4">Keunggulan Kami</h3>
+
+    <div class="row text-center">
+      <div class="col-md-4">
+        <h5> Armada Lengkap</h5>
+        <p>Tersedia berbagai jenis mobil sesuai kebutuhan.</p>
+      </div>
+      <div class="col-md-4">
+        <h5> Mobil Terawat</h5>
+        <p>Servis rutin demi keamanan dan kenyamanan.</p>
+      </div>
+      <div class="col-md-4">
+        <h5> Layanan 24 Jam</h5>
+        <p>Siap membantu pelanggan kapan saja.</p>
+      </div>
+    </div>
+  </div>
+</section>
+      Perjalanan Anda, kenyamanan kami.
+    </p>
+
+    <!-- TOMBOL POP UP -->
+    <a href="katalogmobil.html" class="btn btn-primary w-100">
+    Lihat Katalog
+    </a>
+
+
+  </div>
+</section>
+
+
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white text-center py-3">
+  <small>© 2026 Rental Mobil</small>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+function logout() {
+  localStorage.clear();
+  window.location.href = "login.html";
+}
+</script>
+
+</body>
+</html>
